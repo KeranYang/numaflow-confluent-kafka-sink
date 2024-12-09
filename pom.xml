@@ -30,6 +30,22 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
+		<!-- Add the Kafka dependencies -->
+		<dependency>
+			<groupId>io.confluent</groupId>
+			<artifactId>kafka-avro-serializer</artifactId>
+			<version>7.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			<version>3.7.1</version>
+		</dependency>
+		<dependency>
+		<groupId>com.google.code.gson</groupId>
+		<artifactId>gson</artifactId>
+		<version>${gson.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>io.numaproj.numaflow</groupId>
 			<artifactId>numaflow-java</artifactId>
@@ -100,7 +116,7 @@
 							</container>
 							<to>
 								<image>
-									numaproj-contrib/${project.artifactId}:v2
+									numaproj-contrib/${project.artifactId}:v3
 								</image>
 							</to>
 						</configuration>
