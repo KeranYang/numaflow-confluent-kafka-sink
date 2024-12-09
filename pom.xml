@@ -100,7 +100,7 @@
 							</container>
 							<to>
 								<image>
-									numaproj-contrib/${project.artifactId}:v1
+									numaproj-contrib/${project.artifactId}:v2
 								</image>
 							</to>
 						</configuration>
